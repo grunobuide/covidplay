@@ -8,7 +8,7 @@ Created on Fri Jul 17 09:16:52 2020
 
 import pandas as pd
 
-df = pd.read_csv("/home/bruno/Downloads/owid-covid-data.csv")
+df = pd.read_csv("owid-covid-data.csv")
 
 df = df.sort_values(by=["iso_code", "date"])
 df = df.drop_duplicates(subset=['iso_code'], keep='last')
