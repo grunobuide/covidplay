@@ -32,4 +32,12 @@ def converte_df (df_base,pais_alvo):
     df_out = pd.DataFrame(ls[1:],columns=header)
     return df_out
     
-    
+#adicionando exemplos
+
+brazil = converte_df(df,"Brazil")
+china = converte_df (df,"China")
+
+
+#saving examples as csv
+
+brazil.to_csv("world_as_brazil.csv")
